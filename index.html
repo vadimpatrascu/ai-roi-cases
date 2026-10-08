@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI ROI — проверенные кейсы</title>
+<style>
+  :root { --bg:#0f1419; --card:#1a222c; --line:#2a3542; --text:#e7eef6; --muted:#8ea0b3; --accent:#3ecf8e; --warn:#e6b35a; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.45 Inter, system-ui, sans-serif; background:var(--bg); color:var(--text); }
+  header { padding:28px 32px 8px; }
+  h1 { margin:0 0 6px; font-size:28px; }
+  p.sub { color:var(--muted); margin:0 0 18px; max-width:920px; }
+  .cards { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; padding:0 32px 18px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
+  .card b { display:block; font-size:22px; }
+  .card span { color:var(--muted); font-size:12px; }
+  .wrap { padding:0 32px 40px; overflow:auto; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border-radius:12px; overflow:hidden; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.04em; }
+  td.num { font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .bar { height:8px; background:#243040; border-radius:99px; margin-top:6px; }
+  .bar i { display:block; height:8px; background:var(--accent); border-radius:99px; }
+  .note { color:var(--warn); font-size:12px; }
+  footer { color:var(--muted); padding:0 32px 32px; font-size:12px; max-width:980px; }
+  @media (max-width:900px) { .cards { grid-template-columns:1fr 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>AI в бизнесе: оборот, штат, реальная экономия</h1>
+  <p class="sub">Только цифры из отчётности, earnings call и первичных статей (2025–2026). Это отчёты самих компаний, не независимый аудит. Абсолютные доллары большие, доля от выручки — обычно маленькая.</p>
+</header>
+<section class="cards">
+  <div class="card"><b>$4.5 млрд</b><span>IBM: run-rate продуктивности на конец 2025</span></div>
+  <div class="card"><b>$2 млрд</b><span>JPMorgan: эффект ≈ расходу на AI (Dimon)</span></div>
+  <div class="card"><b>$800 млн</b><span>Bank of America: эффект при расходе $400 млн</span></div>
+  <div class="card"><b>$60 млн</b><span>Klarna: экономия одного агента поддержки</span></div>
+</section>
+<div class="wrap">
+<table>
+  <thead>
+    <tr>
+      <th>Компания</th>
+      <th>Выручка</th>
+      <th>Штат</th>
+      <th>Что внедрили</th>
+      <th>Эффект</th>
+      <th>Доля выручки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Klarna</td>
+      <td class="num">$3.51 млрд (2025)<br>GMV $128 млрд</td>
+      <td class="num">2 831<br><span class="note">было ~5 500 в 2022</span></td>
+      <td>Агент поддержки (OpenAI), 23 рынка, эскалация человеку</td>
+      <td>$60 млн/год, работа 853 FTE, 2/3 обращений, 11 → 2 мин</td>
+      <td class="num">1.7%<div class="bar"><i style="width:34%"></i></div></td>
+    </tr>
+    <tr>
+      <td>IBM</td>
+      <td class="num">$67.5 млрд (2025)</td>
+      <td class="num">~270 тыс.</td>
+      <td>AskHR, драфт контрактов, закупки, Bob (код). 94% HR-запросов — AI</td>
+      <td>$4.5 млрд run-rate на конец 2025 (цель $5.5 млрд). Включает автоматизацию, не только LLM</td>
+      <td class="num">6.7%<div class="bar"><i style="width:100%"></i></div></td>
+    </tr>
+    <tr>
+      <td>JPMorgan</td>
+      <td class="num">$182.4 млрд (2025)</td>
+      <td class="num">318 512</td>
+      <td>LLM Suite для 200–250 тыс. сотрудников, 450+ use cases. COiN — отдельно, старый контрактный система</td>
+      <td>~$2 млрд эффект при ~$2 млрд расхода (1:1). COiN: 360 тыс. юрист-часов/год</td>
+      <td class="num">1.1%<div class="bar"><i style="width:16%"></i></div></td>
+    </tr>
+    <tr>
+      <td>Bank of America</td>
+      <td class="num">активы ~$3.5 трлн<br>техбюджет ~$14 млрд</td>
+      <td class="num">~209 000<br><span class="note">было 213 тыс. в начале года</span></td>
+      <td>~140 use cases. Erica: 3.2+ млрд интеракций. 20 тыс. разработчиков на coding agents</td>
+      <td>$400 млн расход → $800 млн эффект (Moynihan). Erica ≈ 11 000 человек. Без массовых увольнений</td>
+      <td class="num">2.0x ROI<div class="bar"><i style="width:40%"></i></div></td>
+    </tr>
+    <tr>
+      <td>Morgan Stanley</td>
+      <td class="num">$70.6 млрд (2025)</td>
+      <td class="num">~80–83 тыс.</td>
+      <td>DevGen.AI: перевод 9 млн строк COBOL/Perl в спецификации. Команда старта &lt;5, потом ~20</td>
+      <td>280 тыс. часов за 5 месяцев у 15 тыс. разработчиков. Штат не резали</td>
+      <td class="num">часы, не $<div class="bar"><i style="width:8%"></i></div></td>
+    </tr>
+    <tr>
+      <td>General Mills</td>
+      <td class="num">$18.4 млрд (FY2026)</td>
+      <td class="num">~33 тыс.</td>
+      <td>Модели на 5 000 отгрузок/день, человек принимает рекомендации</td>
+      <td>&gt;$20 млн с FY2024 (~$40 тыс./день). План $3 млрд — не только AI</td>
+      <td class="num">0.1%<div class="bar"><i style="width:2%"></i></div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<footer>
+  Источники: Klarna Q4 2025 earnings / annual figures; IBM 2025 annual report and CFO commentary ($4.5B run-rate); JPMorgan financial highlights 2025 and Dimon on ~$2B benefit; Bank of America CEO Moynihan, Sept 2026; Morgan Stanley DevGen.AI via WSJ/Business Insider, 2025; General Mills CFO on shipment models, CIO Dive / earnings. Доля выручки — грубая, чтобы видеть масштаб. Не включены цифры из вторичных блогов без первичного источника.
+</footer>
+</body>
+</html>
